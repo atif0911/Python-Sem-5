@@ -8,11 +8,11 @@ def find_n(x):
     return n
 while True:
     try:
-        x = int(input("Enter a number between 1 and 255: "))
+        x = int(input("Enter Number of Registers in CPU:"))
         if not check_range(x):
             raise ValueError("Number out of range.")
         n = find_n(x)
-        print(f"The value of n for {x} is {n}.")
+        print(f"The number of bits for the register field in the instruction format is {n}.")
         break
     except ValueError as e:
         print(f"Error: {e}. Please try again.")
