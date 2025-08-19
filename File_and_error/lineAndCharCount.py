@@ -1,0 +1,6 @@
+file=open('text.txt','r')
+lines=file.readlines()
+file.seek(0)
+chars=file.read()
+print("characters:",len(chars))
+print("lines:",len(lines))
